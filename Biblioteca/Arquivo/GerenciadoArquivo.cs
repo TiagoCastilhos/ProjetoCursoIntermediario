@@ -7,12 +7,15 @@ using System.IO;
 
 namespace Biblioteca.Arquivo {
     public class GerenciadoArquivo {
-        public void GravarArquivo(string nome, string texto)
+        public static void GravarArquivo(string nome, string texto)
         {
             string caminho = @"C:\Users\tiago.castilhos\source\repos\ProjetoFinalIntermediário\Biblioteca\Arquivo" + nome + ".txt";
             if (File.Exists(caminho))
             {
-                
+                using (StreamWriter wr = File.AppendText(caminho))
+                {
+                    wr.WriteLine(texto);
+                }
             }
             else
             {
@@ -21,6 +24,12 @@ namespace Biblioteca.Arquivo {
                     wr.WriteLine(texto);
                 }
             }
+        }
+
+        public static string[] LerArquivo(string nome)
+        {
+            string caminho = @"C:\Users\tiago.castilhos\source\repos\ProjetoFinalIntermediário\Biblioteca\Arquivo" + nome + ".txt";
+            return File.ReadAllLines(caminho);
         }
     }
 }

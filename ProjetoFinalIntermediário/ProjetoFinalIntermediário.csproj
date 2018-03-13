@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversores\ClienteTexto.cs" />
+    <Compile Include="Conversores\FuncionarioTexto.cs" />
     <Compile Include="Menus\Menus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

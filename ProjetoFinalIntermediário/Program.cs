@@ -8,13 +8,11 @@ using Biblioteca;
 
 namespace ProjetoFinalIntermediário {
     class Program {
-        public static List<Biblioteca.Model.Funcionario> ListaDeFuncionario = new List<Biblioteca.Model.Funcionario>();
-        public static List<Biblioteca.Model.Clientes> ListaDeClientes = new List<Biblioteca.Model.Clientes>();
-
+       
         static void Main(string[] args)
         {
             int opcao = 0;
-            
+
 
             while (opcao != 5)
             {
@@ -29,12 +27,15 @@ namespace ProjetoFinalIntermediário {
                         break;
 
                     case 2:
+                        Menus.Menus.ListarClientes();
                         break;
 
                     case 3:
+                        Menus.Menus.CadastrarFuncionario();
                         break;
 
                     case 4:
+                        Menus.Menus.ListarFuncionarios();
                         break;
 
                     default:
@@ -42,7 +43,6 @@ namespace ProjetoFinalIntermediário {
                         break;
                 }
             }
-
             
         }
     }

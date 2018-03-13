@@ -8,15 +8,15 @@ namespace Biblioteca.Model
 {
     public abstract class Pessoa
     {
-        protected string Nome { get; set; }
-        protected DateTime DataNascimento { get; set; }
-        protected string Telefone { get; set; }
-        protected string CPF { get; set; }
-        protected string RG { get; set; }
-        protected string CEP { get; set; }
-        protected string Estado { get; set; }
-        protected string Cidade { get; set; }
-        protected string Endereço { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Telefone { get; set; }
+        public string CPF { get; set; }
+        public string RG { get; set; }
+        public string CEP { get; set; }
+        public string Estado { get; set; }
+        public string Cidade { get; set; }
+        public string Endereço { get; set; }
         
         
         
